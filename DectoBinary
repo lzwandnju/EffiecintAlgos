@@ -1,0 +1,16 @@
+
+void toBinary(int n){
+    int i,flag,temp;
+    i=0;
+    temp=n;
+    while(n>1){
+        n>>=1;
+        i++;
+    }
+    printf("i=%d\n", i);
+    for(;i>=0;i--){
+        if((temp&(1<<i))!=0) flag=1;
+        else flag=0;
+        printf("%d",flag);
+    }
+   
